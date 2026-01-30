@@ -16,11 +16,15 @@ Arch Linux / CachyOS / EndeavourOS
 sudo pacman -S jemalloc gamemode lib32-gamemode gamescope flatpak
 ```
 
-```Ubuntu/Debian
+Ubuntu/Debian
+
+```bash
 sudo apt update && sudo apt install libjemalloc2 gamemode gamescope flatpak
 ```
 
-```Fedora
+Fedora
+
+```
 sudo dnf install jemalloc gamemode gamescope flatpak
 ```
 
