@@ -87,6 +87,9 @@ Copy the command below and paste it into the **Launch Options** in your Steam ga
 ```bash
 MALLOC_CONF="background_thread:true,metadata_thp:always,dirty_decay_ms:500" DXVK_STATE_CACHE=1 gamemoderun PRESSURE_VESSEL_IMPORT_OPENXR_1_RUNTIMES=1 %command% --enable-avpro-in-proton --enable-hw-video-decoding -force-d3d11-singlethreaded -screen-width 320 -screen-height 240 -nolog -no-analytics
 ```
+### ⚠️ Notes
+* Ensure **Feral GameMode** is installed; otherwise, please remove `gamemoderun` from the command.
+* To apply these settings, right-click **VRChat** in Steam > **Properties** > **General** > **Launch Options**, then restart the game.
 
 ### 🔍 Parameter Breakdown
 
