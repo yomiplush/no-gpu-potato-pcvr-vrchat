@@ -10,8 +10,8 @@ This guide is built with strict adherence to the **VRChat Terms of Service (ToS)
 * **Pure Optimization:** All performance gains come from Linux system-level tuning (Proton, DXVK, and GameMode)
 * and official VRChat launch arguments.
 
-While **CachyOS** is the recommended distribution for its optimized kernel and performance-oriented repository, 
-this guide is applicable to all major Linux environments.
+While **CachyOS** is the recommended distribution for its optimized kernel and performance-oriented repository, <br>
+this guide is applicable to all major Linux environments.<br>
 
 ## Testing Enviorment
 * OS: CachyOS
