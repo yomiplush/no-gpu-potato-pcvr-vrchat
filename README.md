@@ -1,16 +1,18 @@
 # Optimized Potato PCVR for VRChat (Flatpak + WiVRN)
 <img src="https://for-github-resource.pages.dev/header.webp" width="800" alt="header"><br>
 
-This repository provides an aggressive optimization guide for running VRChat on extremely low-end systems, integrated GPUs (iGPU), or **"Potato PCs."** While **CachyOS** is the recommended distribution for maximum performance, this guide covers all major Linux environments.
+This repository provides an aggressive optimization guide for running VRChat on extremely low-end systems, 
+integrated GPUs (iGPU), or **"Potato PCs."** While **CachyOS** is the recommended distribution for maximum performance, 
+this guide covers all major Linux environments.
 
 ---
 Proof of Concept
 * **Clips:** [© VRChat Inc / VRChat](https://www.dailymotion.com/video/x9yukmi)
 
-
 ## 1. Prerequisites & Dependencies
 
-To ensure all optimizations (like `jemalloc` and `VA-API` hardware decoding) function correctly, you must install the following on your host system based on your distribution and hardware.
+To ensure all optimizations (like `jemalloc` and `VA-API` hardware decoding) function correctly, 
+you must install the following on your host system based on your distribution and hardware.
 
 ### Step 1: Install Host Utilities (By Distribution)
 Arch Linux / CachyOS / EndeavourOS
@@ -132,7 +134,8 @@ Configure these settings within the **WiVRN menu** on your headset:
 | **Post-processing** | Sharpening | `Quality` |
 
 > [!TIP]
-> By setting **Anti-Aliasing to Disabled** in VRChat and using **Sharpening** in WiVRN, you can maintain readable text while significantly reducing the load on your integrated GPU.
+> By setting **Anti-Aliasing to Disabled** in VRChat and using **Sharpening** in WiVRN,
+> you can maintain readable text while significantly reducing the load on your integrated GPU.
 
 ## 5. Why these settings?
 
@@ -149,4 +152,5 @@ Configure these settings within the **WiVRN menu** on your headset:
 
 ## Disclaimer
 
-This is a **"Performance First"** configuration. To achieve a playable VR experience on "Potato" hardware, you should expect lower visual fidelity, including shimmering and pixelation. Use this as a baseline and adjust to your preference.
+This is a **"Performance First"** configuration. To achieve a playable VR experience on "Potato" hardware, 
+you should expect lower visual fidelity, including shimmering and pixelation. Use this as a baseline and adjust to your preference.
