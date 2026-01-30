@@ -37,9 +37,6 @@ this guide is applicable to all major Linux environments.<br>
 
 ## 1. Prerequisites & Dependencies
 
-To ensure all optimizations (like `jemalloc` and `VA-API` hardware decoding) function correctly, 
-you must install the following on your host system based on your distribution and hardware.
-
 ### Step 1: Install Steam and required utility extensions
 ```Bash
 flatpak install flathub com.valvesoftware.Steam
