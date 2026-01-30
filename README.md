@@ -135,4 +135,4 @@ Extremely Low Graphics Quality: To make VRChat run on non-GPU PCs, <br>
 the resolution and visual quality are significantly reduced. Do not expect a standard VR experience.<br>
 Hardware Load: This method puts a heavy load on your CPU and integrated graphics (iGPU). <br>
 <br>
-Please note that some PCs may overheat, so use at your own risk..<br>
+Please note that some PCs may overheat, so use at your own risk.<br>
