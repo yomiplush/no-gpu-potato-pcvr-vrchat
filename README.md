@@ -13,7 +13,7 @@ This guide is built with strict adherence to the **VRChat Terms of Service (ToS)
 While **CachyOS** is the recommended distribution for its optimized kernel and performance-oriented repository, 
 this guide is applicable to all major Linux environments.
 
-## Component,Details
+## Testing Enviorment
 * OS: CachyOS
 * Host: LENOVO 20UGS2Q500 (ThinkPad X13 Gen 1)
 * CPU: AMD Ryzen 5 PRO 4650U with Radeon Graphics
