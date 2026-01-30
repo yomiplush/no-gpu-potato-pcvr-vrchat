@@ -82,6 +82,12 @@ Select Version: Choose GE-Proton (Flatpak) from the dropdown list.
 These launch options are optimized for running VRChat in a Linux (Proton) environment. 
 Copy the command below and paste it into the **Launch Options** in your Steam game properties.
 
+### 📋 Copy & Paste
+
+```bash
+MALLOC_CONF="background_thread:true,metadata_thp:always,dirty_decay_ms:500" DXVK_STATE_CACHE=1 gamemoderun PRESSURE_VESSEL_IMPORT_OPENXR_1_RUNTIMES=1 %command% --enable-avpro-in-proton --enable-hw-video-decoding -force-d3d11-singlethreaded -screen-width 320 -screen-height 240 -nolog -no-analytics
+```
+
 ### 🔍 Parameter Breakdown
 
 | Category | Command | Description |
@@ -95,12 +101,6 @@ Copy the command below and paste it into the **Launch Options** in your Steam ga
 | **Performance** | `-force-d3d11-singlethreaded` | Forces D3D11 to run in single-threaded mode for better stability. |
 | **Window** | `-screen-width 320` etc. | Reduces desktop mirror resolution to save system resources. |
 | **Privacy** | `-nolog -no-analytics` | Disables local logging and data analytics transmission. |
-
-### 📋 Copy & Paste
-
-```bash
-MALLOC_CONF="background_thread:true,metadata_thp:always,dirty_decay_ms:500" DXVK_STATE_CACHE=1 gamemoderun PRESSURE_VESSEL_IMPORT_OPENXR_1_RUNTIMES=1 %command% --enable-avpro-in-proton --enable-hw-video-decoding -force-d3d11-singlethreaded -screen-width 320 -screen-height 240 -nolog -no-analytics
-```
 
 ## 4. Crucial In-Game & App Settings
 
