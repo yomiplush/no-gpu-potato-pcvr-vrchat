@@ -10,8 +10,7 @@ To ensure all optimizations (like `jemalloc` and `VA-API` hardware decoding) fun
 
 ### Step 1: Install Host Utilities (By Distribution)
 
-<details>
-<summary>Arch Linux / CachyOS / EndeavourOS</summary>
+Arch Linux / CachyOS / EndeavourOS
 
 ```bash
 sudo pacman -S jemalloc gamemode lib32-gamemode gamescope flatpak
