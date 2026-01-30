@@ -51,7 +51,7 @@ Copy the command below and paste it into the **Launch Options** in your Steam ga
 ### 📋 Copy & Paste
 
 ```bash
-DXVK_CONFIG="dxgi.maxDeviceMemory=4096" gamemoderun WINE_FULLSCREEN_FSR=1 WINE_FULLSCREEN_FSR_MODE=performance PRESSURE_VESSEL_IMPORT_OPENXR_1_RUNTIMES=1 PRESSURE_VESSEL_FILESYSTEMS_RW=/var/lib/flatpak/app/io.github.wivrn.wivrn %command% --enable-avpro-in-proton --enable-hw-video-decoding
+DXVK_CONFIG="dxgi.maxDeviceMemory=4096" gamemoderun WINE_FULLSCREEN_FSR=1 WINE_FULLSCREEN_FSR_MODE=performance PRESSURE_VESSEL_IMPORT_OPENXR_1_RUNTIMES=1 PRESSURE_VESSEL_FILESYSTEMS_RW=/var/lib/flatpak/app/io.github.wivrn.wivrn %command% -screen-width 320 -screen-height 240 --enable-avpro-in-proton --enable-hw-video-decoding
 ```
 ### ⚠️ Notes
 * Ensure **Feral GameMode** is installed; otherwise, please remove `gamemoderun` from the command.
