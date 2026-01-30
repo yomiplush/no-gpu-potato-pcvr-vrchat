@@ -1,14 +1,17 @@
 # Optimized Potato PCVR for VRChat (Flatpak + WiVRn)
 <img src="https://for-github-resource.pages.dev/header.webp" width="800" alt="header"><br>
 
-This repository provides an aggressive, **ToS-friendly** optimization guide for running VRChat on extremely low-end systems, integrated GPUs (iGPU), or **"Potato PCs."** 
+This repository provides an aggressive, **ToS-friendly** optimization guide for running VRChat 
+on extremely low-end systems, integrated GPUs (iGPU), or **"Potato PCs."** 
 ### 🛡️ Compliance & Safety First
 This guide is built with strict adherence to the **VRChat Terms of Service (ToS)**. 
 * **NO Client Modding:** We do not modify VRChat's binaries, `.dll` files, or internal assets.
 * **NO EAC Bypass:** This setup works fully within the Easy Anti-Cheat (EAC) environment.
-* **Pure Optimization:** All performance gains come from Linux system-level tuning (Proton, DXVK, and GameMode) and official VRChat launch arguments.
+* **Pure Optimization:** All performance gains come from Linux system-level tuning (Proton, DXVK, and GameMode)
+* and official VRChat launch arguments.
 
-While **CachyOS** is the recommended distribution for its optimized kernel and performance-oriented repository, this guide is applicable to all major Linux environments.
+While **CachyOS** is the recommended distribution for its optimized kernel and performance-oriented repository, 
+this guide is applicable to all major Linux environments.
 
 ---
 # Proof of Concept
