@@ -67,13 +67,17 @@ Step 3: Flatpak Setup
 Install Steam and the necessary runtime extensions:
 
 # Add the Flathub repository
+```Bash
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+```
 
 # Install Steam and required utility extensions
+```Bash
 flatpak install flathub com.valvesoftware.Steam \
 com.valvesoftware.Steam.Utility.gamescope \
 com.valvesoftware.Steam.CompatibilityTool.Proton-GE \
 org.freedesktop.Platform.VAAPI.Mesa
+```
 
 2. Compatibility Tool (Proton GE)
 VRChat requires Proton GE for functional in-game video players (AVPro) and essential performance fixes.
