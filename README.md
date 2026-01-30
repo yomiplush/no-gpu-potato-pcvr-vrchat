@@ -13,7 +13,7 @@ This guide is built with strict adherence to the **VRChat Terms of Service (ToS)
 While **CachyOS** is the recommended distribution for its optimized kernel and performance-oriented repository, 
 this guide is applicable to all major Linux environments.
 
-# Component,Details
+## Component,Details
 * OS,CachyOS x86_64 (Kernel: 6.18.7-2-cachy)
 * Host,LENOVO 20UGS2Q500 (ThinkPad X13 Gen 1)
 * CPU,AMD Ryzen 5 PRO 4650U with Radeon Graphics
@@ -26,7 +26,7 @@ this guide is applicable to all major Linux environments.
 * **FPS:** Approx. [avg 31-38] FPS
 * **Video Proof:** [Watch the video here](https://www.dailymotion.com/video/x9yukmi)
 
-# Required hardware
+## Required hardware
 * Internet Connection
 * PC (Laptop or Desktop but atleast not need high-prices GPU stuff)
 * Quest 1/2/3/3s or Pico HMD (or supported WiVRN apps even sideload)
