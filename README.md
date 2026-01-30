@@ -24,7 +24,7 @@ sudo dnf install jemalloc gamemode gamescope
 ### Step 2: Install Graphics Drivers (By Hardware)
 Required for hardware video decoding (--enable-hw-video-decoding) on iGPUs.
 
-Intel (Integrated Graphics / Arc)
+## Intel (Integrated Graphics / Arc)
 Arch Linux:
 
 ```Bash
@@ -42,7 +42,7 @@ Fedora:
 sudo dnf install intel-media-driver
 ```
 
-AMD (Radeon / Ryzen iGPU)
+## AMD (Radeon / Ryzen iGPU)
 Arch Linux:
 
 ```Bash
@@ -68,17 +68,13 @@ com.valvesoftware.Steam.CompatibilityTool.Proton-GE \
 org.freedesktop.Platform.VAAPI.Mesa
 ```
 
-2. Compatibility Tool (Proton GE)
+## 2. Compatibility Tool (Proton GE)
 VRChat requires Proton GE for functional in-game video players (AVPro) and essential performance fixes.
 
-Open Steam.
-
+# Open Steam.
 Navigate to VRChat: Right-click VRChat in your library and select Properties.
-
 Compatibility Tab: Go to the Compatibility section.
-
 Enable Override: Check the box: "Force the use of a specific Steam Play compatibility tool."
-
 Select Version: Choose GE-Proton (Flatpak) from the dropdown list.
 
 ## 4. Crucial In-Game & App Settings
