@@ -20,7 +20,7 @@ this guide is applicable to all major Linux environments.<br>
 * Host: LENOVO 20UGS2Q500 (ThinkPad X13 Gen 1)
 * CPU: AMD Ryzen 5 PRO 4650U with Radeon Graphics
 * GPU: AMD ATI Radeon Vega 6 (Integrated)
-* Memory: 8GB (Approx. 6573MiB detected)
+* Memory: 32 GB
 * Network: Wi-Fi 6 / Wired
 
 ### Performance & Proof
