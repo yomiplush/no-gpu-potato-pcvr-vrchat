@@ -11,8 +11,6 @@ This guide is built with strict adherence to the **VRChat Terms of Service (ToS)
 While **CachyOS** is the recommended distribution for its optimized kernel and performance-oriented repository, this guide is applicable to all major Linux environments.
 
 ---
-
----
 # Proof of Concept
 * **Clips:** [© VRChat Inc / VRChat](https://www.dailymotion.com/video/x9yukmi)
 
@@ -27,64 +25,13 @@ While **CachyOS** is the recommended distribution for its optimized kernel and p
 To ensure all optimizations (like `jemalloc` and `VA-API` hardware decoding) function correctly, 
 you must install the following on your host system based on your distribution and hardware.
 
-### Step 1: Install Host Utilities (By Distribution)
-Arch Linux / CachyOS / EndeavourOS
-```bash
-sudo pacman -S jemalloc gamemode lib32-gamemode gamescope
-```
-Ubuntu/Debian
-```bash
-sudo apt update && sudo apt install libjemalloc2 gamemode gamescope
-```
-Fedora
-```
-sudo dnf install jemalloc gamemode gamescope
-```
-### Step 2: Install Graphics Drivers (By Hardware)
-Required for hardware video decoding (--enable-hw-video-decoding) on iGPUs.
-
-## Intel (Integrated Graphics / Arc)
-Arch Linux:
-
-```Bash
-sudo pacman -S intel-media-driver libva-intel-driver
-```
-
-Ubuntu:
-
-```Bash
-sudo apt install intel-media-va-driver-non-free
-```
-Fedora:
-
-```Bash
-sudo dnf install intel-media-driver
-```
-
-## AMD (Radeon / Ryzen iGPU)
-Arch Linux:
-
-```Bash
-sudo pacman -S libva-mesa-driver mesa-vdpau
-```
-Ubuntu:
-
-```Bash
-sudo apt install mesa-va-drivers mesa-vdpau-drivers
-```
-
-Fedora:
-
-```Bash
-sudo dnf install mesa-va-drivers
-```
-
-# Install Steam and required utility extensions
+### Step 1: Install Steam and required utility extensions
 ```Bash
 flatpak install flathub com.valvesoftware.Steam
 flatpak install flathub org.freedesktop.Platform.VulkanLayer.gamescope
 flatpak install flathub com.valvesoftware.Steam.CompatibilityTool.Proton-GE
 flatpak install flathub org.freedesktop.Platform.VAAPI.Mesa
+flatpak install flathub net.davidotek.pupgui2
 ```
 
 ## 2. Compatibility Tool (Proton GE)
@@ -124,7 +71,6 @@ DXVK_CONFIG="dxgi.maxDeviceMemory=4096" gamemoderun WINE_FULLSCREEN_FSR=1 WINE_F
 | **Window** | `-screen-width 320 -screen-height 240` etc. | Minimizes the desktop mirror resolution to save precious GPU/CPU cycles. |
 | **Privacy** | `-nolog -no-analytics` | Disables local logging and telemetry to reduce disk I/O and overhead. |
 
-
 ## 4. Crucial In-Game & App Settings
 
 For Potato PCVR, software-side optimization is just as critical as the launch commands.
@@ -157,8 +103,6 @@ Configure these settings within the **WiVRN menu** on your headset:
     * Massive FPS boost by significantly reducing the fragment shader workload on the iGPU.
 * **WiVRN 50% Res + Sharpening**
     * Drastically saves VRAM and GPU cycles by rendering fewer pixels, while using a low-cost sharpening filter to maintain text readability.
-* **jemalloc (`MALLOC_CONF`)**
-    * Stabilizes RAM usage on systems where memory is shared between the CPU and GPU, preventing crashes during heavy asset loading.
 * **Hardware Decoding**
     * Offloads in-game video playback to the GPU's dedicated media engine, preventing the CPU from bottlenecking the entire system.
 
