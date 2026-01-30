@@ -6,8 +6,14 @@ integrated GPUs (iGPU), or **"Potato PCs."** While **CachyOS** is the recommende
 this guide covers all major Linux environments.
 
 ---
-Proof of Concept
+# Proof of Concept
 * **Clips:** [© VRChat Inc / VRChat](https://www.dailymotion.com/video/x9yukmi)
+
+# Required hardware
+* Internet Connection
+* PC (Laptop or Desktop)
+* Quest 1/2/3/3s or Pico HMD (or supported WiVRN apps even sideload)
+* Linux OS (Recommend CachyOS Single-boot, but first trying i personally recommend dual-boot stuff your favor)
 
 ## 1. Prerequisites & Dependencies
 
