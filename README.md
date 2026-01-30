@@ -47,7 +47,7 @@ Fedora:
 
 ```Bash
 sudo dnf install intel-media-driver
-
+```
 
 AMD (Radeon / Ryzen iGPU)
 Arch Linux:
