@@ -11,15 +11,15 @@ To ensure all optimizations (like `jemalloc` and `VA-API` hardware decoding) fun
 ### Step 1: Install Host Utilities (By Distribution)
 Arch Linux / CachyOS / EndeavourOS
 ```bash
-sudo pacman -S jemalloc gamemode lib32-gamemode gamescope flatpak
+sudo pacman -S jemalloc gamemode lib32-gamemode gamescope
 ```
 Ubuntu/Debian
 ```bash
-sudo apt update && sudo apt install libjemalloc2 gamemode gamescope flatpak
+sudo apt update && sudo apt install libjemalloc2 gamemode gamescope
 ```
 Fedora
 ```
-sudo dnf install jemalloc gamemode gamescope flatpak
+sudo dnf install jemalloc gamemode gamescope
 ```
 ### Step 2: Install Graphics Drivers (By Hardware)
 Required for hardware video decoding (--enable-hw-video-decoding) on iGPUs.
