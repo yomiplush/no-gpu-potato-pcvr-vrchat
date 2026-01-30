@@ -67,14 +67,6 @@ Fedora:
 sudo dnf install mesa-va-drivers
 ```
 
-Step 3: Flatpak Setup
-Install Steam and the necessary runtime extensions:
-
-# Add the Flathub repository
-```Bash
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-```
-
 # Install Steam and required utility extensions
 ```Bash
 flatpak install flathub com.valvesoftware.Steam \
