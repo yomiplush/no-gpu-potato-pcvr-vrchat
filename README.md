@@ -1,4 +1,5 @@
 # Optimized Potato PCVR for VRChat (Flatpak + WiVRN)
+<img src="https://for-github-resource.pages.dev/header.webp" width="800" alt="header"><br>
 
 This repository provides an aggressive optimization guide for running VRChat on extremely low-end systems, integrated GPUs (iGPU), or **"Potato PCs."** While **CachyOS** is the recommended distribution for maximum performance, this guide covers all major Linux environments.
 
