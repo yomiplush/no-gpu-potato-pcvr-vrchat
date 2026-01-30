@@ -1,5 +1,4 @@
 # Optimized Potato PCVR for VRChat (Flatpak + WiVRN)
-<img src="https://for-github-resource.pages.dev/header.webp" width="800" alt="header"><br>
 
 This repository provides an aggressive optimization guide for running VRChat on extremely low-end systems, integrated GPUs (iGPU), or **"Potato PCs."** While **CachyOS** is the recommended distribution for maximum performance, this guide covers all major Linux environments.
 
@@ -77,6 +76,30 @@ Navigate to VRChat: Right-click VRChat in your library and select Properties.
 Compatibility Tab: Go to the Compatibility section.
 Enable Override: Check the box: "Force the use of a specific Steam Play compatibility tool."
 Select Version: Choose GE-Proton (Flatpak) from the dropdown list.
+
+## 🚀 Steam Launch Options (VRChat Optimized)
+
+These launch options are optimized for running VRChat in a Linux (Proton) environment. 
+Copy the command below and paste it into the **Launch Options** in your Steam game properties.
+
+### 🔍 Parameter Breakdown
+
+| Category | Command | Description |
+| :--- | :--- | :--- |
+| **Memory** | `MALLOC_CONF="..."` | Optimizes jemalloc; reduces fragmentation and improves background thread efficiency. |
+| **Graphics** | `DXVK_STATE_CACHE=1` | Enables DXVK state cache to reduce stutters during gameplay. |
+| **System** | `gamemoderun` | Applies Feral GameMode to prioritize CPU performance. |
+| **VR / XR** | `PRESSURE_VESSEL_...` | Allows importing OpenXR runtimes within the pressure-vessel container. |
+| **VRChat** | `--enable-avpro-in-proton` | Enables AVPro video playback support on Proton. |
+| **VRChat** | `--enable-hw-video-decoding` | Enables hardware-accelerated video decoding. |
+| **Performance** | `-force-d3d11-singlethreaded` | Forces D3D11 to run in single-threaded mode for better stability. |
+| **Window** | `-screen-width 320` etc. | Reduces desktop mirror resolution to save system resources. |
+| **Privacy** | `-nolog -no-analytics` | Disables local logging and data analytics transmission. |
+
+### 📋 Copy & Paste
+
+```bash
+MALLOC_CONF="background_thread:true,metadata_thp:always,dirty_decay_ms:500" DXVK_STATE_CACHE=1 gamemoderun PRESSURE_VESSEL_IMPORT_OPENXR_1_RUNTIMES=1 %command% --enable-avpro-in-proton --enable-hw-video-decoding -force-d3d11-singlethreaded -screen-width 320 -screen-height 240 -nolog -no-analytics
 
 ## 4. Crucial In-Game & App Settings
 
