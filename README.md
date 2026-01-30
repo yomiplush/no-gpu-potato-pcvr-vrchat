@@ -13,13 +13,22 @@ This guide is built with strict adherence to the **VRChat Terms of Service (ToS)
 While **CachyOS** is the recommended distribution for its optimized kernel and performance-oriented repository, 
 this guide is applicable to all major Linux environments.
 
----
-# Proof of Concept
-* **Clips:** [© VRChat Inc / VRChat](https://www.dailymotion.com/video/x9yukmi)
+# Component,Details
+* OS,CachyOS x86_64 (Kernel: 6.18.7-2-cachy)
+* Host,LENOVO 20UGS2Q500 (ThinkPad X13 Gen 1)
+* CPU,AMD Ryzen 5 PRO 4650U with Radeon Graphics
+* GPU,AMD ATI Radeon Vega 6 (Integrated)
+* Memory,8GB (Approx. 6573MiB detected)
+* Network,Wi-Fi 6 / Wired
+
+### Performance & Proof
+* **Result:** Successfully rendered VRChat in PCVR mode with iGPU stuff laptop.
+* **FPS:** Approx. [avg 31-38] FPS
+* **Video Proof:** [Watch the video here](https://www.dailymotion.com/video/x9yukmi)
 
 # Required hardware
 * Internet Connection
-* PC (Laptop or Desktop)
+* PC (Laptop or Desktop but atleast not need high-prices GPU stuff)
 * Quest 1/2/3/3s or Pico HMD (or supported WiVRN apps even sideload)
 * Linux OS (Recommend CachyOS Single-boot, but first trying i personally recommend dual-boot stuff your favor)
 
@@ -116,7 +125,9 @@ Configure these settings within the **WiVRN menu** on your headset:
 
 ---
 
-## Disclaimer
+⚠️ Disclaimer / Warning
 
 This is a **"Performance First"** configuration. To achieve a playable VR experience on "Potato" hardware, 
 you should expect lower visual fidelity, including shimmering and pixelation. Use this as a baseline and adjust to your preference.
+Extremely Low Graphics Quality: To make VRChat run on non-GPU PCs, the resolution and visual quality are significantly reduced. Do not expect a standard VR experience.
+Hardware Load: This method puts a heavy load on your CPU and integrated graphics (iGPU). Please use this at your own risk, as it may cause your PC to overheat.
