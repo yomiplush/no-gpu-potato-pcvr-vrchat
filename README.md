@@ -3,6 +3,9 @@
 This repository provides an aggressive optimization guide for running VRChat on extremely low-end systems, integrated GPUs (iGPU), or **"Potato PCs."** While **CachyOS** is the recommended distribution for maximum performance, this guide covers all major Linux environments.
 
 ---
+Proof of Concept
+* **Clips:** [© VRChat Inc / VRChat](https://www.dailymotion.com/video/x9yukmi)
+
 
 ## 1. Prerequisites & Dependencies
 
