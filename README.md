@@ -81,6 +81,8 @@ For Potato PCVR, software-side optimization is just as critical as the launch co
 ### VRChat Settings (Graphics)
 Adjust these within the VRChat Main Menu under **Settings** > **Graphics**:
 
+<img src="https://for-github-resource.pages.dev/vrchat.jpg" width="800" alt="header"><br>
+
 - **Quality Preset**: `Custom`
 - **Anti-Aliasing**: **`Disabled`** (Crucial: AA is extremely heavy for iGPU resources)
 - **Shadows**: `Low`
@@ -88,6 +90,9 @@ Adjust these within the VRChat Main Menu under **Settings** > **Graphics**:
 
 ### WiVRN (Quest App) Settings
 Configure these settings within the **WiVRN menu** on your headset:
+
+<img src="https://for-github-resource.pages.dev/wivrn1.jpg" width="800" alt="header"><br>
+<img src="https://for-github-resource.pages.dev/wivrn2.jpg" width="800" alt="header"><br>
 
 | Tab | Setting | Recommended Value |
 | :--- | :--- | :--- |
