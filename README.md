@@ -125,12 +125,15 @@ Configure these settings within the **WiVRN menu** on your headset:
 
 ---
 
-⚠️ Disclaimer / Warning
+⚠️ Disclaimer / Warning<br>
 <br>
 This is a **"Performance First"** configuration. To achieve a playable VR experience on "Potato" hardware,<br>
 you should expect lower visual fidelity, including shimmering and pixelation. <br>
+<br>
 Use this as a baseline and adjust to your preference.<br>
 Extremely Low Graphics Quality: To make VRChat run on non-GPU PCs, <br>
+<br>
 the resolution and visual quality are significantly reduced. Do not expect a standard VR experience.<br>
 Hardware Load: This method puts a heavy load on your CPU and integrated graphics (iGPU). <br>
+<br>
 Please use this at your own risk, as it may cause your PC to overheat.<br>
