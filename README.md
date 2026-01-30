@@ -62,10 +62,10 @@ sudo dnf install mesa-va-drivers
 
 # Install Steam and required utility extensions
 ```Bash
-flatpak install flathub com.valvesoftware.Steam \
-com.valvesoftware.Steam.Utility.gamescope \
-com.valvesoftware.Steam.CompatibilityTool.Proton-GE \
-org.freedesktop.Platform.VAAPI.Mesa
+flatpak install flathub com.valvesoftware.Steam
+flatpak install flathub org.freedesktop.Platform.VulkanLayer.gamescope
+flatpak install flathub com.valvesoftware.Steam.CompatibilityTool.Proton-GE
+flatpak install flathub org.freedesktop.Platform.VAAPI.Mesa
 ```
 
 ## 2. Compatibility Tool (Proton GE)
