@@ -49,11 +49,11 @@ flatpak install flathub net.davidotek.pupgui2
 ## 2. Compatibility Tool (Proton GE)
 VRChat requires Proton GE for functional in-game video players (AVPro) and essential performance fixes.
 
-# Open Steam.
+## Open Steam.
 Navigate to VRChat: Right-click VRChat in your library and select Properties.
 Compatibility Tab: Go to the Compatibility section.
 Enable Override: Check the box: "Force the use of a specific Steam Play compatibility tool."
-Select Version: Choose GE-Proton (Flatpak) from the dropdown list.
+Select Version: Choose GE-Proton (Flatpak) from the dropdown list. (if not showing this, please download via proton-qt apps)
 
 ## 🚀 Steam Launch Options (VRChat Optimized)
 
