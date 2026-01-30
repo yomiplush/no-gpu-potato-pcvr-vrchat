@@ -14,7 +14,7 @@ While **CachyOS** is the recommended distribution for its optimized kernel and p
 this guide is applicable to all major Linux environments.
 
 ## Component,Details
-* OS: CachyOS x86_64 (Kernel: 6.18.7-2-cachy)
+* OS: CachyOS
 * Host: LENOVO 20UGS2Q500 (ThinkPad X13 Gen 1)
 * CPU: AMD Ryzen 5 PRO 4650U with Radeon Graphics
 * GPU: AMD ATI Radeon Vega 6 (Integrated)
