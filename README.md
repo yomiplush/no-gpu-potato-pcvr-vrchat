@@ -26,11 +26,14 @@ this guide is applicable to all major Linux environments.<br>
 * **FPS:** Approx. [avg 31-38] FPS
 * **Video Proof:** [Watch the video here](https://www.dailymotion.com/video/x9yukmi)
 
-## Required hardware
+## Required Enviorment
 * Internet Connection
 * PC (Laptop or Desktop but atleast not need high-prices GPU stuff)
 * Quest 1/2/3/3s or Pico HMD (or supported WiVRN apps even sideload)
 * Linux OS (Recommend CachyOS Single-boot, but first trying i personally recommend dual-boot stuff your favor)
+* Flatpak ver Steam
+* Flatpak ver WiVRN
+* sometimes you need coffee ^x^
 
 ## 1. Prerequisites & Dependencies
 
