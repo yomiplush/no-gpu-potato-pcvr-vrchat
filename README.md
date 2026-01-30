@@ -1,4 +1,4 @@
-# 🚀 Optimized Potato PCVR for VRChat (Flatpak + WiVRn)
+# Optimized Potato PCVR for VRChat (Flatpak + WiVRn)
 <img src="https://for-github-resource.pages.dev/header.webp" width="800" alt="header"><br>
 
 This repository provides an aggressive, **ToS-friendly** optimization guide for running VRChat on extremely low-end systems, integrated GPUs (iGPU), or **"Potato PCs."** 
