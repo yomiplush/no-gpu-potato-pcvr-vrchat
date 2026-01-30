@@ -52,7 +52,6 @@ Arch Linux:
 ```Bash
 sudo pacman -S libva-mesa-driver mesa-vdpau
 ```
-
 Ubuntu:
 
 ```Bash
