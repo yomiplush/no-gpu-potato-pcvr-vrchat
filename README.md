@@ -1,9 +1,15 @@
-# Optimized Potato PCVR for VRChat (Flatpak + WiVRN)
+# 🚀 Optimized Potato PCVR for VRChat (Flatpak + WiVRn)
 <img src="https://for-github-resource.pages.dev/header.webp" width="800" alt="header"><br>
 
-This repository provides an aggressive optimization guide for running VRChat on extremely low-end systems, 
-integrated GPUs (iGPU), or **"Potato PCs."** While **CachyOS** is the recommended distribution for maximum performance, 
-this guide covers all major Linux environments.
+This repository provides an aggressive, **ToS-friendly** optimization guide for running VRChat on extremely low-end systems, integrated GPUs (iGPU), or **"Potato PCs."** ### 🛡️ Compliance & Safety First
+This guide is built with strict adherence to the **VRChat Terms of Service (ToS)**. 
+* **NO Client Modding:** We do not modify VRChat's binaries, `.dll` files, or internal assets.
+* **NO EAC Bypass:** This setup works fully within the Easy Anti-Cheat (EAC) environment.
+* **Pure Optimization:** All performance gains come from Linux system-level tuning (Proton, DXVK, and GameMode) and official VRChat launch arguments.
+
+While **CachyOS** is the recommended distribution for its optimized kernel and performance-oriented repository, this guide is applicable to all major Linux environments.
+
+---
 
 ---
 # Proof of Concept
@@ -97,7 +103,7 @@ Copy the command below and paste it into the **Launch Options** in your Steam ga
 ### 📋 Copy & Paste
 
 ```bash
-MALLOC_CONF="background_thread:true,metadata_thp:always,dirty_decay_ms:500" DXVK_STATE_CACHE=1 gamemoderun PRESSURE_VESSEL_IMPORT_OPENXR_1_RUNTIMES=1 %command% --enable-avpro-in-proton --enable-hw-video-decoding -force-d3d11-singlethreaded -screen-width 320 -screen-height 240 -nolog -no-analytics
+DXVK_CONFIG="dxgi.maxDeviceMemory=4096" gamemoderun WINE_FULLSCREEN_FSR=1 WINE_FULLSCREEN_FSR_MODE=performance PRESSURE_VESSEL_IMPORT_OPENXR_1_RUNTIMES=1 PRESSURE_VESSEL_FILESYSTEMS_RW=/var/lib/flatpak/app/io.github.wivrn.wivrn %command% --enable-avpro-in-proton --enable-hw-video-decoding
 ```
 ### ⚠️ Notes
 * Ensure **Feral GameMode** is installed; otherwise, please remove `gamemoderun` from the command.
@@ -107,15 +113,16 @@ MALLOC_CONF="background_thread:true,metadata_thp:always,dirty_decay_ms:500" DXVK
 
 | Category | Command | Description |
 | :--- | :--- | :--- |
-| **Memory** | `MALLOC_CONF="..."` | Optimizes jemalloc; reduces fragmentation and improves background thread efficiency. |
-| **Graphics** | `DXVK_STATE_CACHE=1` | Enables DXVK state cache to reduce stutters during gameplay. |
-| **System** | `gamemoderun` | Applies Feral GameMode to prioritize CPU performance. |
-| **VR / XR** | `PRESSURE_VESSEL_...` | Allows importing OpenXR runtimes within the pressure-vessel container. |
-| **VRChat** | `--enable-avpro-in-proton` | Enables AVPro video playback support on Proton. |
-| **VRChat** | `--enable-hw-video-decoding` | Enables hardware-accelerated video decoding. |
-| **Performance** | `-force-d3d11-singlethreaded` | Forces D3D11 to run in single-threaded mode for better stability. |
-| **Window** | `-screen-width 320` etc. | Reduces desktop mirror resolution to save system resources. |
-| **Privacy** | `-nolog -no-analytics` | Disables local logging and data analytics transmission. |
+| **Memory** | `DXVK_CONFIG="dxgi.maxDeviceMemory=..."` | Limits VRAM reporting to prevent crashes on systems with shared memory (iGPU). |
+| **Graphics** | `WINE_FULLSCREEN_FSR=1` | Enables AMD FidelityFX Super Resolution for better visuals at low resolutions. |
+| **Graphics** | `WINE_FULLSCREEN_FSR_MODE=performance` | Sets FSR to prioritize frame rate over image quality. |
+| **System** | `gamemoderun` | Applies Feral GameMode to optimize CPU governor and process priority. |
+| **VR / XR** | `PRESSURE_VESSEL_IMPORT_OPENXR_1_RUNTIMES=1` | Seamlessly imports host OpenXR runtimes into the Steam container. |
+| **VRChat** | `--enable-avpro-in-proton` | Native support for AVPro video playback within the Proton environment. |
+| **VRChat** | `--enable-hw-video-decoding` | Offloads video decoding to hardware to reduce CPU overhead. |
+| **Window** | `-screen-width 320 -screen-height 240` etc. | Minimizes the desktop mirror resolution to save precious GPU/CPU cycles. |
+| **Privacy** | `-nolog -no-analytics` | Disables local logging and telemetry to reduce disk I/O and overhead. |
+
 
 ## 4. Crucial In-Game & App Settings
 
