@@ -34,8 +34,8 @@ VRChat requires **Proton GE** to fix in-game video players (AVPro) and improve o
 
 > [!TIP]
 > If you don't see GE-Proton in the list, make sure you have installed the `com.valvesoftware.Steam.CompatibilityTool.Proton-GE` Flatpak extension mentioned in the Prerequisites.
->
-> ## 3. Steam Launch Options
+
+## 3. Steam Launch Options
 
 Copy and paste the following command into **VRChat** > **Properties** > **General** > **Launch Options**:
 
