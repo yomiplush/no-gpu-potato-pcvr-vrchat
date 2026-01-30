@@ -62,7 +62,7 @@ Copy the command below and paste it into the **Launch Options** in your Steam ga
 ### 3. Copy & Paste
 
 ```bash
-DXVK_CONFIG="dxgi.maxDeviceMemory=4096" gamemoderun WINE_FULLSCREEN_FSR=1 WINE_FULLSCREEN_FSR_MODE=performance PRESSURE_VESSEL_IMPORT_OPENXR_1_RUNTIMES=1 PRESSURE_VESSEL_FILESYSTEMS_RW=/var/lib/flatpak/app/io.github.wivrn.wivrn %command% -screen-width 320 -screen-height 240 --enable-avpro-in-proton --enable-hw-video-decoding
+DXVK_CONFIG="dxgi.maxDeviceMemory=4096" gamemoderun WINE_FULLSCREEN_FSR=1 WINE_FULLSCREEN_FSR_MODE=performance PRESSURE_VESSEL_IMPORT_OPENXR_1_RUNTIMES=1 PRESSURE_VESSEL_FILESYSTEMS_RW=/var/lib/flatpak/app/io.github.wivrn.wivrn %command% -screen-width 320 -screen-height 240
 ```
 ### ⚠️ Notes
 * Ensure **Feral GameMode** is installed; otherwise, please remove `gamemoderun` from the command.
@@ -77,8 +77,6 @@ DXVK_CONFIG="dxgi.maxDeviceMemory=4096" gamemoderun WINE_FULLSCREEN_FSR=1 WINE_F
 | **Graphics** | `WINE_FULLSCREEN_FSR_MODE=performance` | Sets FSR to prioritize frame rate over image quality. |
 | **System** | `gamemoderun` | Applies Feral GameMode to optimize CPU governor and process priority. |
 | **VR / XR** | `PRESSURE_VESSEL_IMPORT_OPENXR_1_RUNTIMES=1` | Seamlessly imports host OpenXR runtimes into the Steam container. |
-| **VRChat** | `--enable-avpro-in-proton` | Native support for AVPro video playback within the Proton environment. |
-| **VRChat** | `--enable-hw-video-decoding` | Offloads video decoding to hardware to reduce CPU overhead. |
 | **Window** | `-screen-width 320 -screen-height 240` etc. | Minimizes the desktop mirror resolution to save precious GPU/CPU cycles. |
 | **Privacy** | `-nolog -no-analytics` | Disables local logging and telemetry to reduce disk I/O and overhead. |
 
