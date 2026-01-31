@@ -111,6 +111,7 @@ Configure these settings within the **WiVRN menu** on your headset:
 > [!TIP]
 > By setting **Anti-Aliasing to Disabled** in VRChat and using **Sharpening** in WiVRN,
 > you can maintain readable text while significantly reducing the load on your integrated GPU.
+> and if you've changed the font size on your Quest, setting it back to default may fix the rendering bug.
 
 ## 5. Why these settings?
 
