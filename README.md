@@ -104,6 +104,7 @@ Configure these settings within the **WiVRN menu** on your headset:
 | :--- | :--- | :--- |
 | **Settings** | Refresh Rate | `60` |
 | **Settings** | Render Resolution | `50% (~916x1007 per eye)` |
+| **Settings** | Streaming Resolution | `50%` |
 | **Settings** | Bitrate | `25Mbit/s` |
 | **Post-processing** | Sharpening | `Quality` |
 
